@@ -26,6 +26,7 @@ investment-advisor/
 ├── automations.md                     # 自动化任务设计
 ├── notification_policy.md             # 提醒分级和推送规则
 ├── intraday_opportunity_rules.md      # 盘中机会和临时看票规则
+├── research_framework.md              # 选票、主线、资金行为和情绪分析
 ├── HERMES_BRIEF.md                    # 执行 Agent 任务边界
 ├── USER_PLAYBOOK.md                   # 用户操作手册
 ├── trade_journal.csv                  # 交易日志
@@ -55,5 +56,5 @@ investment-advisor/
 - 亏损短线票不加仓。
 - 社媒、公众号、小红书、社群永远只做情绪雷达，不能直接作为买入依据。
 - 所有买入建议必须包含价格条件、仓位上限、止损/失效条件。
+- 选票和研究必须遵守 `research_framework.md`，不猜“主力意图”，只分析可观察证据。
 - 所有输出都必须提醒：最终执行由本人手动确认。
-
