@@ -1,0 +1,98 @@
+meta:
+  currency: CNY
+  last_updated: 2026-05-22
+  declared_total_assets: 170000
+  categorized_assets_total: 170000
+  reconciliation_gap: 0
+  note: "本文件只记录资产和持仓，不连接账户，不自动交易。"
+
+cash:
+  demand_cash: 20000
+  money_market: null
+  emergency_cash: null
+
+funds:
+  total: 3224.49
+  holdings: []
+  dca_plans: []
+
+stocks:
+  account_total: 8000
+  holdings:
+    - code: "000993"
+      name: "闽东电力"
+      market: "SZ"
+      shares: 100
+      cost_price: 13.63
+      current_price: 13.13
+      market_value: 1313
+      floating_pnl: -50.01
+      account_type: core
+      buy_reason: null
+      stop_loss: "用户可接受成本价上下约 10% 波动；按成本 13.63 计算，风险复核/止损观察线约 12.27。跌破后必须重新评估，不自动卖出。"
+      target: "用户可接受成本价上下约 10% 波动；按成本 13.63 计算，目标/复核线约 14.99。到达后复核是否继续持有，不自动卖出。"
+      add_rules: "长期仓如需加仓，必须重新给出价格条件、仓位上限、基本面/趋势理由和失效条件。"
+      no_add_rules: "没有买入理由、价格条件、仓位上限、止损/失效条件时不加仓；不因短线波动或社媒热度加仓。"
+      notes: "根据用户截图和补充信息录入。截图显示：闽东电力 000993，深股通，L1，当前价 13.13，涨跌 0.00%，市值 60.13 亿，流通 57.74 亿，市盈 TTM 294.00。用户定义为长期仓，持有 100 股，成本 13.63，按截图当前价估算市值 1313 CNY，浮动盈亏约 -50.01 CNY。本记录不自动交易。"
+  holding_schema:
+    - code:
+      name:
+      market:
+      shares:
+      cost_price:
+      current_price:
+      market_value:
+      floating_pnl:
+      account_type: core/trend/theme/short_term
+      buy_reason:
+      stop_loss:
+      target:
+      add_rules:
+      no_add_rules:
+      notes:
+
+gold:
+  total: 7340.24
+  holdings: []
+
+other_assets:
+  total: 66820
+  holdings: []
+
+provident_fund:
+  total: 64615.27
+  notes: "用于资产统计，不属于短线或主动交易资金。"
+
+monthly_cashflow:
+  monthly_investable: 5000
+
+target_allocation:
+  cash_and_low_risk:
+    min_pct: null
+    max_pct: null
+  equity_funds_and_stocks:
+    min_pct: null
+    max_pct: null
+  gold:
+    min_pct: null
+    max_pct: null
+  short_term:
+    max_pct: null
+    max_amount: 5000
+
+profile:
+  risk_preference: medium
+  investment_goal: "股票、基金"
+  mistakes_to_avoid:
+    - "无"
+  focus_markets_or_industries:
+    - "不限制"
+
+risk_controls:
+  no_auto_trading: true
+  manual_confirmation_required: true
+  no_broker_login: true
+  buy_advice_requires:
+    - price_condition
+    - position_limit
+    - stop_loss_or_invalidation

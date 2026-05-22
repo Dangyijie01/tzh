@@ -1,0 +1,52 @@
+timezone: Asia/Shanghai
+
+trial_run:
+  enabled: true
+  trading_days: 5
+
+notifications:
+  enabled: false
+  channels:
+    wechat:
+      enabled: false
+      target: "填写微信或企业微信目标，不要填写密码"
+    im:
+      enabled: false
+      target: "填写 IM 目标，不要填写 token"
+  throttle:
+    same_symbol_same_condition_minutes: 30
+
+market:
+  indexes:
+    cn_benchmark:
+      - code: "000001"
+        name: "上证指数"
+      - code: "399001"
+        name: "深证成指"
+      - code: "399006"
+        name: "创业板指"
+    hk_benchmark: []
+    us_benchmark: []
+
+scan_times:
+  pre_market: "08:45"
+  action_consultation: "10:00"
+  fund_check: "14:05"
+  close_review: "15:30"
+  evening_summary: "20:30"
+  weekly_allocation: "SUN 20:30"
+
+watch:
+  holdings: []
+  watchlist: []
+
+output:
+  reports_dir: "reports"
+  templates_dir: "templates"
+
+safety:
+  no_auto_trading: true
+  no_broker_login: true
+  manual_confirmation_required: true
+  no_passwords_in_config: true
+

@@ -1,0 +1,22 @@
+.DS_Store
+Thumbs.db
+
+# Local secrets and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+
+# Runtime output
+runtime/
+logs/
+*.log
+
+# Local editor and cache files
+.idea/
+.vscode/
+__pycache__/
+.pytest_cache/
+node_modules/

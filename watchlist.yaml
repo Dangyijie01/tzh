@@ -1,0 +1,17 @@
+meta:
+  note: "观察池只用于跟踪和复盘，不代表买入建议，不自动交易。"
+  item_schema:
+    - name:
+      code:
+      market:
+      account_type:
+      watch_reason:
+      planned_buy_condition:
+      invalidation_condition:
+      notes:
+
+core: []
+trend: []
+theme: []
+avoid: []
+
